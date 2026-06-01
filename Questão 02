@@ -1,0 +1,38 @@
+#include <stdio.h> //Inclusao da biblioteca padrao de entrada e saida
+
+int main (){
+	//Declaracao das variaveis para armazenar os dois numeros inteiros digitados
+	int num1, num2;
+	
+	//Declaracao das variaveis que armazenarao os resultados dos calculos
+	int soma;
+	int divisao_int;
+	float divisao_real; //Tipo float para suportar o resultado com casas decimais
+	
+	//Entrada de dados: leitura do primeiro numero inteiro
+	printf("Digite o primeiro numero inteiro: ");
+	scanf("%d", &num1);
+	
+	//Entrada de dados: leitura do segundo numero inteiro
+	printf("Digite o segundo numero inteiro: ");
+	scanf("%d", &num2);
+	
+	//Processamento de dados
+	soma = num1 + num2;				//Realiza a soma simples entre inteiros
+	divisao_int = num1 / num2;		//Divisao truncada (ignora a parte fracionada)
+	
+	//Divisao real utilizando CASTING:
+	//O operador (float) antes de num1 converte temporariamente o seu valor para real.
+	//Isso forca o compilador a realizar uma divisao real em vez de uma divisao inteira.
+	divisao_real = (float)num1 / num2;
+	
+	// Exibicao dos resultados formatados na tela
+	printf ("\n ====RESULTADOS==== \n");
+	printf ("Soma: %d\n", soma);
+	printf ("Divisao Inteira: %d\n", divisao_int);
+	
+	//Exibe a divisao real formatada com 2 casas decimais usando o modificador %.2f
+	printf ("Divisao Real (com casting): %.2f\n", divisao_real);
+	
+	return 0; //Sinaliza para o sistema operacional que o programa finalizou
+}
