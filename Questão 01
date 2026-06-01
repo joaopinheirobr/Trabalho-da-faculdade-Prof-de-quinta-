@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+	// Declaracao das variaveis para armazenar os dados do usuario
+	char inicial; 	//Variavel para armazenar uma unica letra
+	int idade;		//Variavel para armazenar numeros inteiros
+	float altura; 	//Variavel para armazenar numeros decimais (ponto flutuante)
+	
+	//solicita ao usuario a idade e a inicial do nome
+	printf("Entre com a sua idade e sua inicial: \n");
+	
+	// le a idade e a inicial.
+	scanf ("%d %c", &idade, &inicial);
+	
+	// Solicita ao usuario a altura
+	printf("Agora entre com sua altura: \n");
+	
+	//le a altura.
+	scanf ("%f", &altura);
+	
+	//Exibe o resultado final formatado. o %.2f limita a exibicao da altura para 2 casas decimais
+	printf("Voce tem %d anos, seu nome comeca com %c ,e a sua altura atual eh %.2f \n", idade, inicial, altura);
+
+	return 0; // indica que o programa foi executado com sucesso
+}
