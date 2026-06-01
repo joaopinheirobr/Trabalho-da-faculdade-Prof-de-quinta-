@@ -38,19 +38,19 @@ int main() { // Aqui é onde o computador começa a rodar o nosso código de ver
 
         case '/': // Se o usuário digitou /, vem pra cá:
             // EVITANDO DAR RUIM NA MATEMÁTICA
-            if (num2 != 0) { // Se o segundo número NÃO for zero, tá safo, pode dividir
+            if (num2 != 0) { // Se o segundo número NÃO for zero, tá ok, pode dividir
                 resultado = num1 / num2;                 // Faz a divisão
                 printf("Resultado: %.2f\n", resultado); // Mostra na tela
             } 
-            else { // Mas se o infeliz tentar dividir por zero...
-                printf("Erro: Nao e possivel dividir por zero!\n"); // Avisa que não dá pra fazer milagre
+            else { // Mas se o usuario tentar dividir por zero...
+                printf("Erro: Nao e possivel dividir por zero!\n"); // Avisa que não dá pra fazer
             }
-            break; // Sai do switch de boa
+            break; // Sai do switch
 
-        default: // Se o usuário digitou qualquer doideira que não seja +, -, * ou /
+        default: // Se o usuário digitou qualquer coisa que não seja +, -, * ou /
             printf("Erro: Operacao invalida!\n"); // Avisa que ele errou o botão
-            break;                                // Fim de papo
+            break;                                //  Sai do switch
     }
 
-    return 0; // Diz pro sistema operacional: "Tudo certo, o programa rodou sem travar!"
-} // Fecha a função principal e encerra o show
+    return 0; // Diz pro sistema que tá tudo ok
+} // Fecha a função principal e encerra 
