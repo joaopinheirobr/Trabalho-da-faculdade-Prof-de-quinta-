@@ -1,0 +1,29 @@
+#include <stdio.h> // Inclusão da biblioteca padrão de entrada e saída
+
+int main() {
+    // Declaração da variável em tipo float para permitir a validação de decimais ou inteiros
+    float numero;
+
+    // Entrada de dados: lê o número informado pelo usuário
+    printf("Digite um numero qualquer: ");
+    scanf("%f", &numero);
+
+    // Cabeçalho dos resultados
+    printf("\n=== ANALISE DO NUMERO ===\n");
+
+    // Estrutura condicional encadeada (if / else if / else) para testar os três estados
+    if (numero > 0) {
+        // Se o número for estritamente maior que zero, ele é positivo
+        printf("O numero %.2f eh POSITIVO.\n", numero);
+    } 
+    else if (numero < 0) {
+        // Se o número for estritamente menor que zero, ele é negativo
+        printf("O numero %.2f eh NEGATIVO.\n", numero);
+    } 
+    else {
+        // Se o número não for maior e nem menor que zero, ele é obrigatoriamente igual a zero
+        printf("O numero digitado eh ZERO.\n");
+    }
+
+    return 0; // Indica ao sistema operacional que o programa funcionou corretamente
+}
