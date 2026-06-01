@@ -1,0 +1,28 @@
+#include <stdio.h> // Traz a biblioteca padrão pra gente conseguir usar o printf e o scanf
+
+int main() { // Aqui é onde o computador começa a rodar o nosso código de verdade
+
+    // CRIANDO AS CAIXINHAS NA MEMÓRIA
+    int numero; // Guarda o número que o usuário quer ver a tabuada
+    int x;      // O seu contador favorito para o laço 'for'
+
+    // PEGANDO O NÚMERO DO USUÁRIO
+    printf("Digite um numero para ver a sua tabuada: "); // Pergunta pro usuário qual tabuada ele quer
+    scanf("%d", &numero); // Pega o número inteiro digitado e joga na caixinha 'numero'
+
+    printf("\nTabuada do %d:\n", numero); // texto bonitinho pra organizar a tela
+
+    // O FOR FAZENDO A OPERAÇÃO COM O 'X'
+    // Começa com x = 1, vai até x <= 10, e aumenta de 1 em 1 (x++)
+    for (x = 1; x <= 10; x++) {
+        
+        // CÁLCULO E EXIBIÇÃO DIRETO NO PRINTF
+        // O printf vai substituir os %d na ordem: 
+        // 1º %d recebe o 'numero', 2º %d recebe o 'x' e o 3º %d recebe o resultado de 'numero * x'
+        printf("%d x %d = %d\n", numero, x, numero * x);
+        
+    } // Chegou aqui, o 'x' ganha +1 e o loop testa se ainda é menor ou igual a 10
+
+    return 0; // Avisa pro sistema que o programa rodou e terminou com sucesso
+    
+} // Fecha a função principal e encerra 

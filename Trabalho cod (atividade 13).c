@@ -1,0 +1,22 @@
+#include <stdio.h> // Traz a biblioteca padrão pra gente conseguir usar o printf e o scanf
+
+int main() { // Aqui é onde o computador começa a rodar o nosso código de verdade
+    
+    // O CONTADOR
+    int x; // Cria a variável 'x' que vai funcionar como o nosso contador 
+
+    printf("Contando de 1 ate 10:\n"); // Só uma mensagem na tela pra avisar o que o programa está fazendo
+
+    // O LAÇO FOR (A MÁQUINA DE REPETIR)
+    // O for tem 3 partes separadas por ponto e vírgula (;):
+    // 1ª: x = 1   -> Onde começa (o 'x' ganha o valor 1)
+    // 2ª: x <= 10 -> Até onde vai (o loop continua rodando ENQUANTO o 'x' for menor ou igual a 10)
+    // 3ª: x++     -> O passo (significa x = x + 1, ou seja, soma mais 1 no 'x' a cada volta que o loop der)
+    for (x = 1; x <= 10; x++) {
+        
+        printf("%d\n", x); // Mostra o valor atual do 'x' na tela e pula uma linha (\n)
+        
+    } // Quando chega aqui, o programa volta lá pro topo do 'for', soma +1 no 'x' e testa a condição de novo
+
+    return 0; // Avisa pro sistema que o programa terminou certinho e sem travar
+} // Fecha a função principal e encerra o show

@@ -1,0 +1,34 @@
+#include <stdio.h> // Traz a biblioteca padrão pra gente conseguir usar o printf e o scanf
+
+int main() { // Aqui é onde o computador começa a rodar o nosso código de verdade
+    
+    float nota1, nota2, media; // Cria três variáveis pra números quebrados (já que nota pode ser 7.5, 5.8, etc.)
+
+    // PEGANDO AS NOTAS DO ALUNO
+    printf("Digite a primeira nota: "); // Pede a primeira nota na tela
+    scanf("%f", &nota1);                  // Salva o que foi digitado na nota1
+
+    printf("Digite a segunda nota: "); // Pede a segunda nota na tela
+    scanf("%f", &nota2);                  // Salva a nota2
+
+    
+    media = (nota1 + nota2) / 2.0; // Soma as duas notas e divide por 2 pra achar a média do aluno
+
+    // MOSTRANDO A MÉDIA NA TELA
+    printf("\nMedia do aluno: %.2f\n", media); // Mostra a média final com só 2 números depois da vírgula (por causa do %.2f)
+
+    if (media >= 7.0) { // Se a média for 7 ou mais, o aluno tá aprovado
+        printf("Situacao: Aprovado\n"); // Avisa que ele passou direto 
+    } 
+    else if (media >= 5.0 && media < 7.0) { // Se a média ficou entre 5 E menos de 7 (6.9 por exemplo)...
+        // O "&&" significa "E", ou seja, tem que bater as duas regras ao mesmo tempo pra entrar aqui
+        
+        printf("Situacao: Recuperacao\n"); // Avisa que vai ter que estudar mais um pouco na recuperação
+    } 
+    else { 
+        printf("Situacao: Reprovado\n"); // Se não entrou em nenhuma das opções acima, é porque a nota foi menor que 5
+    }
+
+    return 0; // Diz pro computador que o programa rodou e terminou sem nenhum erro
+    
+} // Fecha a função principal e encerra
