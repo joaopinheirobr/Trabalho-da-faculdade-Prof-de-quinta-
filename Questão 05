@@ -1,0 +1,26 @@
+#include <stdio.h> // Inclusão da biblioteca padrão de entrada e saída
+
+int main() {
+    // Declaração das variáveis para armazenar a média (decimal) e a frequência (inteiro)
+    float media;
+    int frequencia;
+
+    // Entrada de dados: leitura da média final do estudante
+    printf("Digite a media final do aluno (0 a 10): ");
+    scanf("%f", &media);
+
+    // Entrada de dados: leitura da percentagem de frequência
+    printf("Digite a frequencia do aluno (0 a 100%%): ");
+    scanf("%d", &frequencia);
+
+    // Processamento e Decisão usando o operador lógico E (&&):
+    // Ambas as condições relacionais devem ser verdadeiras simultaneamente para a aprovação.
+    if (media >= 7.0 && frequencia >= 75) {
+        printf("\nSituacao: Aluno APROVADO!\n");
+    } else {
+        // O bloco else é executado se qualquer uma das condições relacionais falhar
+        printf("\nSituacao: Aluno REPROVADO.\n");
+    }
+
+    return 0; // Encerra o programa indicando sucesso
+}
