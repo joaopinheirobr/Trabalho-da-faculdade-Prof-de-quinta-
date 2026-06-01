@@ -1,0 +1,33 @@
+#include <stdio.h> //Inclusao da biblioteca padrao de entrada e saida
+
+int main (){
+	//Declaracao das variaveis para armazenar os dois numeros inteiros digitados
+	int num1, num2;	
+	
+	//Entrada de dados: leitura do primeiro numero
+	printf("Digite o primeiro numero inteiro: ");
+	scanf("%d", &num1);
+	
+	//Entrada de dados: leitura do segundo numero 
+	printf("Digite o segundo numero inteiro: ");
+	scanf("%d", &num2);
+	
+	// Exibicao dos resultados formatados na tela
+	printf ("\n ====RESULTADOS DE ANALISE==== \n");
+	
+	//Estrutura condicional encadeada (if / else if / else) para avaliar as tres condicoes possiveis
+	if (num1 == num2) {
+		//Utiliza o operador relacional de igualdade (==)
+		printf("Estes numeros sao iguais.\n");
+	}
+	else if (num1 > num2) {
+		//Utiliza o operador relacional "maior que" (>)
+		printf("O primeiro numero (%d) eh maior que o segundo (%d)\n", num1, num2);
+	}
+	else {
+		//Se os numeros nao forem iguais e o primeiro nao for maior, logicamente o segundo eh maior.
+		//O compilador assume esta condicao atraves do 'else' final
+		printf("O segundo numero (%d) eh maior que o primeiro (%d)\n", num2, num1);
+	}
+	return 0; //Sinaliza para o sistema operacional que o programa finalizou	
+}
