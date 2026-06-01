@@ -1,0 +1,31 @@
+#include <stdio.h> // Inclusão da biblioteca padrão de entrada e saída
+
+int main() {
+    // Declaração dos arrays de caracteres (strings) e da variável inteira
+    char nome[50];   // Suporta um nome com até 49 caracteres (+ '\0')
+    int idade;
+    char cidade[50]; // Suporta uma cidade com até 49 caracteres (+ '\0')
+
+    // Entrada de dados: Leitura do nome completo
+    printf("Digite o seu nome completo: ");
+    // Nota Técnica: Usamos " %[^\n]" no scanf para permitir a leitura de espaços no teclado,
+    // evitando que o programa quebre ou ignore sobrenomes ao encontrar um espaço em branco.
+    scanf(" %[^\n]", nome);
+
+    // Entrada de dados: Leitura da idade
+    printf("Digite a sua idade: ");
+    scanf("%d", &idade);
+
+    // Entrada de dados: Leitura da cidade
+    printf("Digite a sua cidade: ");
+    scanf(" %[^\n]", cidade);
+
+    // Exibição dos dados cadastrados (Comandos de Saída Formatada)
+    printf("\n====== DADOS DO CADASTRO ======\n");
+    printf("Nome:   %s\n", nome);
+    printf("Idade:  %d anos\n", idade);
+    printf("Cidade: %s\n", cidade);
+    printf("===============================\n");
+
+    return 0; // Encerra o programa com sucesso
+}
