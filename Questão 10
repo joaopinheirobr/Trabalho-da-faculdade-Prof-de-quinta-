@@ -1,0 +1,24 @@
+#include <stdio.h>  // Inclusao da biblioteca padrao de entrada e de saida
+#include <stdlib.h> // Inclusao da biblioteca para controle do sistema
+
+int main() {
+    // Declaracao da variavel para armazenar o numero inteiro
+    int numero;
+
+    // Entrada de dados: solicita e le o valor numerico inteiro
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &numero);
+
+    // Processamento e Decisao:
+    // O operador de modulo (%) calcula o resto da divisao inteira.
+    // Se o resto da divisao do numero por 2 for igual a 0, o numero eh par.
+    if (numero % 2 == 0) {
+        printf("\nO numero %d eh PAR.\n", numero);
+    } 
+    else {
+        // Se o resto nao for 0, o numero eh impar
+        printf("\nO numero %d eh IMPAR.\n", numero);
+    }
+
+    return 0; // Finaliza a execucao do programa com sucesso
+}
