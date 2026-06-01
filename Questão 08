@@ -1,0 +1,23 @@
+#include <stdio.h> // Inclusão da biblioteca padrão de entrada e saída
+
+int main() {
+    // Declaração das variáveis utilizando o tipo float para suportar temperaturas com casas decimais
+    float celsius;
+    float fahrenheit;
+
+    // Entrada de dados: solicita e lê a temperatura na escala Celsius
+    printf("Digite a temperatura em Celsius (C): ");
+    scanf("%f", &celsius);
+
+    // Processamento: Aplicação da fórmula matemática de conversão.
+    // Nota Técnica: Usamos "9.0" e "5.0" em vez de "9" e "5" para garantir que o compilador 
+    // faça uma divisão real (ponto flutuante) e não uma divisão inteira truncada.
+    fahrenheit = ((9.0 * celsius) / 5.0) + 32.0;
+
+    // Exibição do resultado (Comando de Saída)
+    // O modificador %.1f limita a exibição das temperaturas a uma única casa decimal
+    printf("\n=== CONVERSAO DE TEMPERATURA ===\n");
+    printf("%.1f C equivale a %.1f F\n", celsius, fahrenheit);
+
+    return 0; // Finaliza o programa corretamente
+}
