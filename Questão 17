@@ -1,6 +1,6 @@
-#include <stdio.h> // Traz a biblioteca padr„o pra gente conseguir usar o printf e o scanf
+#include <stdio.h> // Traz a biblioteca padr√£o pra gente conseguir usar o printf e o scanf
 
-int main() { // Aqui È onde o computador comeÁa a rodar o nosso cÛdigo de verdade
+int main() { // Aqui √© onde o computador come√ßa a rodar o nosso c√≥digo de verdade
     
     // CRIANDO O VETOR (O NOSSO ARMARIO DE DADOS)
     int vet[5]; // Cria um vetor com 5 posicoes (caixinhas) para guardar numeros inteiros
