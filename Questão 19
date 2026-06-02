@@ -1,6 +1,6 @@
-#include <stdio.h> // Traz a biblioteca padrão pra gente conseguir usar o printf e o scanf
+#include <stdio.h> // Traz a biblioteca padrÃ£o pra gente conseguir usar o printf e o scanf
 
-int main() { // Aqui é onde o computador começa a rodar o nosso código de verdade
+int main() { // Aqui Ã© onde o computador comeÃ§a a rodar o nosso cÃ³digo de verdade
     
     // CRIANDO AS CAIXINHAS NA MEMORIA
     int mat[2][2]; // Cria uma matriz (tabela) de 2 linhas e 2 colunas para numeros inteiros
@@ -29,7 +29,7 @@ int main() { // Aqui é onde o computador começa a rodar o nosso código de verdad
 
     printf("\n* Exibindo a Matriz Digitada *\n\n");
 
-    // LAÇO DUPLO APENAS PARA MOSTRAR A MATRIZ EM FORMATO DE TABELA
+    // LAÃ‡O DUPLO APENAS PARA MOSTRAR A MATRIZ EM FORMATO DE TABELA
     for (x = 0; x < 2; x++) {
         for (y = 0; y < 2; y++) {
             printf("%d\t", mat[x][y]); // O '\t' serve para dar um espaco (Tab) entre os numeros
